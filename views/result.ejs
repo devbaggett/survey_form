@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dojo_survey_style.css') }}">
+    <title>Submitted info</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Submitted Info</h1>
+        <form action="go_back">
+        <div>
+            <p>Name: <%= survey.name %></p>
+            <p>Dojo Location: <%= survey.location %></p>
+            <p>Favorite Language: <%= survey.language %></p>
+            <p>Comments: <%= survey.comments %></p>
+        </div>
+        <button type="submit" formaction="go_back">Go Back</button>
+    </form>
+    </div>
+    
+</body>
+</html>
